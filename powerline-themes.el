@@ -50,10 +50,10 @@
                                        (powerline-buffer-size mode-line 'l))
                                      (when powerline-display-mule-info
                                        (powerline-raw mode-line-mule-info mode-line 'l))
-                                     (powerline-buffer-id mode-line-buffer-id 'l)
+                                     (powerline-buffer-id mode-line 'l)
                                      (when (and (boundp 'which-func-mode) which-func-mode)
                                        (powerline-raw which-func-format nil 'l))
-                                     (powerline-raw " ")
+                                     (powerline-raw " " mode-line)
                                      (funcall separator-left mode-line face1)
                                      (when (and (boundp 'erc-track-minor-mode) erc-track-minor-mode)
                                        (powerline-raw erc-modified-channels-object face1 'l))
@@ -74,7 +74,7 @@
 				     (powerline-raw ":" face1 'l)
 				     (powerline-raw "%3c" face1 'r)
 				     (funcall separator-right face1 mode-line)
-				     (powerline-raw " ")
+				     (powerline-raw " " mode-line)
 				     (powerline-raw "%6p" mode-line 'r)
                                      (when powerline-display-hud
                                        (powerline-hud face2 face1)))))
