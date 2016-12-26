@@ -39,6 +39,7 @@
                           (mode-line (if active 'mode-line 'mode-line-inactive))
                           (face1 (if active 'powerline-active1 'powerline-inactive1))
                           (face2 (if active 'powerline-active2 'powerline-inactive2))
+                          (hl-face (if active 'powerline-active-hl 'powerline-inactive-hl))
                           (separator-left (intern (format "powerline-%s-%s"
 							  (powerline-current-separator)
                                                           (car powerline-default-separator-dir))))

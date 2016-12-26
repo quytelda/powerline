@@ -31,6 +31,11 @@
   "Powerline face 2."
   :group 'powerline)
 
+(defface powerline-active-hl
+  '((t (:background "#ffff00" :foreground "gray9" :inherit mode-line)))
+  "Powerline active highlighting face."
+  :group 'powerline)
+
 (defface powerline-inactive1
   '((t (:background "grey11" :inherit mode-line-inactive)))
   "Powerline face 1."
@@ -39,6 +44,11 @@
 (defface powerline-inactive2
   '((t (:background "grey20" :inherit mode-line-inactive)))
   "Powerline face 2."
+  :group 'powerline)
+
+(defface powerline-inactive-hl
+  '((t (:background "#8d8d00" :foreground "gray22" :inherit mode-line-inactive)))
+  "Powerline inactive highlighting face."
   :group 'powerline)
 
 (defface mode-line-buffer-id-inactive
